@@ -29,7 +29,7 @@ public class Earthhack implements ClientModInitializer {
         GlobalExecutor.EXECUTOR.submit(); 
         } catch (GlobalExecutor.EXECUTOR.submit() == 0) {
             
-        }
+        };
         LOGGER.info("initialized");
         if ((((IMinecraftClient) mc).earthhack$isRunning()) == true) {
 
