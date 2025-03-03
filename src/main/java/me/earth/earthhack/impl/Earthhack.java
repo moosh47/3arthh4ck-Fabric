@@ -13,8 +13,8 @@ import static me.earth.earthhack.api.util.interfaces.Globals.mc;
 
 public class Earthhack implements ClientModInitializer {
 
-    private static final Logger LOGGER = LogManager.getLogger("3arthh4ck");
-    public static final String NAME = "3arthh4ck";
+    private static final Logger LOGGER = LogManager.getLogger("Phobos 1.8.5");
+    public static final String NAME = "Phobos 1.8.5";
     public static final String VERSION = "1.0.5";
     public static long startMS;
 
@@ -22,10 +22,18 @@ public class Earthhack implements ClientModInitializer {
     public void onInitializeClient() {
         startMS = System.currentTimeMillis();
         GlobalExecutor.EXECUTOR.submit(() -> Sphere.cacheSphere(LOGGER));
-        LOGGER.info("\n\n ------------------ Initializing 3arthh4ck-fabric. ------------------ \n");
+        LOGGER.info("Initializing");
         Managers.load();
         LOGGER.info("Prefix is " + Commands.getPrefix());
-        LOGGER.info("\n\n ------------------ 3arthh4ck-fabric initialized. ------------------ \n");
+        try { 
+        GlobalExecutor.EXECUTOR.submit(); 
+        } catch (GlobalExecutor.EXECUTOR.submit() == 0) {
+            
+        }
+        LOGGER.info("initialized");
+        if ((((IMinecraftClient) mc).earthhack$isRunning()) == true) {
+
+        }
     }
 
     public static Logger getLogger() {
