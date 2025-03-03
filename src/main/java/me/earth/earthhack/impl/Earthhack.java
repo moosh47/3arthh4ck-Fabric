@@ -8,6 +8,8 @@ import me.earth.earthhack.impl.util.math.geocache.Sphere;
 import net.fabricmc.api.ClientModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import me.earth.earthhack.impl.managers.thread;
+import me.earth.earthhack.impl.managers.minecraft;
 
 import static me.earth.earthhack.api.util.interfaces.Globals.mc;
 
@@ -15,7 +17,7 @@ public class Earthhack implements ClientModInitializer {
 
     private static final Logger LOGGER = LogManager.getLogger("Phobos 1.8.5");
     public static final String NAME = "Phobos 1.8.5";
-    public static final String VERSION = "1.0.5";
+    public static final String VERSION = "1.8.5";
     public static long startMS;
 
     @Override
@@ -28,12 +30,9 @@ public class Earthhack implements ClientModInitializer {
         try { 
         GlobalExecutor.EXECUTOR.submit(); 
         } catch (GlobalExecutor.EXECUTOR.submit() == 0) {
-            
+        
         };
         LOGGER.info("initialized");
-        if ((((IMinecraftClient) mc).earthhack$isRunning()) == true) {
-
-        }
     }
 
     public static Logger getLogger() {
