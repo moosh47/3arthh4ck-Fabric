@@ -27,11 +27,6 @@ public class Earthhack implements ClientModInitializer {
         LOGGER.info("Initializing");
         Managers.load();
         LOGGER.info("Prefix is " + Commands.getPrefix());
-        try { 
-        GlobalExecutor.EXECUTOR.submit(); 
-        } catch (GlobalExecutor.EXECUTOR.submit() == 0) {
-        
-        };
         LOGGER.info("initialized");
     }
 
