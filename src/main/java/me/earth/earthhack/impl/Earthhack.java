@@ -13,9 +13,9 @@ import static me.earth.earthhack.api.util.interfaces.Globals.mc;
 
 public class Earthhack implements ClientModInitializer {
 
-    private static final Logger LOGGER = LogManager.getLogger("Phobos");
-    public static final String NAME = "Phobos";
-    public static final String VERSION = "1.0.5";
+    private static final Logger LOGGER = LogManager.getLogger("Phobos-Client");
+    public static final String NAME = "Phobos-Client";
+    public static final String VERSION = "1.10.5";
     public static long startMS;
 
     @Override
